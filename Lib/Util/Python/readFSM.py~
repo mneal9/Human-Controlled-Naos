@@ -10,10 +10,10 @@ import os
 usr = str(os.getenv('USER'))
 
 #NOTE!!! Works with code in Human-Controlled-Naos directory
-game = open("/home/"+usr+"/Human-Controlled-Naos/Player/GameFSM/RoboCup/GameFSM.lua", "r").readlines()
-body_player = open("/home/"+usr+"/Human-Controlled-Naos/Player/BodyFSM/NaoPlayer/BodyFSM.lua", "r").readlines()
-body_goalie = open("/home/"+usr+"/Human-Controlled-Naos/Player/BodyFSM/NaoGoalie/BodyFSM.lua", "r").readlines()
-head = open("/home/"+usr+"/Human-Controlled-Naos/Player/HeadFSM/NaoPlayer/HeadFSM.lua", "r").readlines()
+game = open("/home/"+usr+"/Human-Controlled-Naos-1/Player/GameFSM/RoboCup/GameFSM.lua", "r").readlines()
+body_player = open("/home/"+usr+"/Human-Controlled-Naos-1/Player/BodyFSM/NaoPlayer/BodyFSM.lua", "r").readlines()
+body_goalie = open("/home/"+usr+"/Human-Controlled-Naos-1/Player/BodyFSM/NaoGoalie/BodyFSM.lua", "r").readlines()
+head = open("/home/"+usr+"/Human-Controlled-Naos-1/Player/HeadFSM/NaoPlayer/HeadFSM.lua", "r").readlines()
 
 class ReadFSM:
 
