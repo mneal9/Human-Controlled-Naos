@@ -21,13 +21,11 @@ require('bodyOrbitLeft')
 require('bodyOrbitRight')
 require('bodyRight')
 require('bodyLeft')
-require('bodyAnnass')
 
 sm = fsm.new(bodyIdle); -- dont mess
 sm:add_state(bodyStart); -- dont mess
 sm:add_state(bodyStop); -- dont mess
 sm:add_state(bodyReady); -- dont mess
-sm:add_state(bodyAnnass);
 sm:add_state(bodyControl); -- control state
 sm:add_state(bodySearch);
 sm:add_state(bodyApproach);
@@ -42,8 +40,7 @@ sm:add_state(bodyOrbitRight);
 sm:add_state(bodyRight);
 sm:add_state(bodyLeft);
 
-sm:set_transition(bodyStart, 'done', bodyAnnass); -- ANNASS
-sm:set_transition(bodyAnnass, 'done', bodyPosition); -- dont mess
+sm:set_transition(bodyStart, 'done', bodyPosition); -- dont mess
 
 -- transitions from control state to all other states
 sm:set_transition(bodyControl, 'search', bodySearch);
@@ -81,8 +78,6 @@ sm:set_transition(bodyPosition, 'ballLost', bodySearch);
 sm:set_transition(bodyApproach, 'ballLost', bodySearch);
 sm:set_transition(bodyOrbitLeft, 'ballLost', bodySearch);
 sm:set_transition(bodyOrbitRight, 'ballLost', bodySearch);
-sm:set_transition(bodyRight, 'ballLost', bodySearch);
-sm:set_transition(bodyLeft, 'ballLost', bodySearch);
 
 -- going straight to kick
 sm:set_transition(bodyApproach, 'kick', bodyKick);

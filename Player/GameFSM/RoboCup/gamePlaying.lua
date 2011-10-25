@@ -20,7 +20,7 @@ function entry()
   BodyFSM.sm:set_state('bodyStart');
   HeadFSM.sm:set_state('headStart');
 
-  Speak.talk('Playing');
+  --Speak.talk('Playing');
 
   -- set indicator
   Body.set_indicator_state({0,1,0});

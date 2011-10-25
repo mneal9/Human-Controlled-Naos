@@ -16,7 +16,7 @@ function entry()
   t0 = Body.get_time();
   walk.set_velocity(0,0,0);
   walk.stop();
-  --Speak.talk('Defending');
+  Speak.talk('Defending');
 end
 
 function update()

@@ -21,7 +21,7 @@ function entry()
   BodyFSM.sm:set_state('bodyReady');
   HeadFSM.sm:set_state('headReady');
 
-  --Speak.talk('Ready');
+  Speak.talk('Ready');
 
   -- set indicator
   Body.set_indicator_state({0,0,1});

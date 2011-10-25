@@ -24,7 +24,7 @@ function entry()
   HeadFSM.sm:set_state('headIdle');
   BodyFSM.sm:set_state('bodyIdle');
 
-  --Speak.talk('Initial');
+  Speak.talk('Initial');
 
   -- set indicator
   --Body.set_indicator_state({1,1,1});

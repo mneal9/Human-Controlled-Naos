@@ -42,7 +42,7 @@ sm:add_state(bodyOrbitRight);
 sm:add_state(bodyRight);
 sm:add_state(bodyLeft);
 
-sm:set_transition(bodyStart, 'done', bodyAnnass); -- ANNASS
+sm:set_transition(bodyStart, 'done', bodyPosition); -- ANNASS
 sm:set_transition(bodyAnnass, 'done', bodyPosition); -- dont mess
 
 -- transitions from control state to all other states

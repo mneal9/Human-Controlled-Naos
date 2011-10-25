@@ -20,7 +20,7 @@ function entry()
   BodyFSM.sm:set_state('bodyStop');
   HeadFSM.sm:set_state('headTrack');
 
-  Speak.talk('Set');
+  --Speak.talk('Set');
 
   -- set indicator
   Body.set_indicator_state({1,1,0});

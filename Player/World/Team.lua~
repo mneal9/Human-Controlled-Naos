@@ -176,19 +176,19 @@ function set_role(r)
     Body.set_indicator_role(role);
     if role == 1 then
       -- attack
-      --Speak.talk('Attack');
+      Speak.talk('Attack');
     elseif role == 2 then
       -- defend
-      --Speak.talk('Defend');
+      Speak.talk('Defend');
     elseif role == 3 then
       -- support
-      --Speak.talk('Support');
+      Speak.talk('Support');
     elseif role == 0 then
       -- goalier
-      --Speak.talk('Goalie');
+      Speak.talk('Goalie');
     else
       -- no role
-      --Speak.talk('ERROR: Unkown Role');
+      Speak.talk('ERROR: Unkown Role');
     end
   end
 end
